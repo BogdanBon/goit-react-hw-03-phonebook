@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.item {
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item > span {
+  margin-right: 10px;
+}
+
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(250, 128, 114);
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: rgb(67, 67, 67);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
